@@ -1,14 +1,19 @@
 import React from "react"
+import Layout from "./layout"
+import SEO from "./seo"
+
+import { graphql } from "gatsby"
 
 export default function Template({data}) {
-  const blogpost = data.markdownRemark;
+  const {markdownRemark: blogpost} = data;
 
   return (
-    <div>
+    <Layout>
+      <SEO title={blogpost.frontmatter.title} />
       <h1>{blogpost.frontmatter.title}</h1>
       <p>path: {blogpost.frontmatter.path}</p>
       <div dangerouslySetInnerHTML={{__html: blogpost.html}}></div>
-    </div>
+    </Layout>
   )
 }
 
