@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = ({actions, graphql}) => {
   const {createPage} = actions;
 
-  const blogpostTemplate = path.resolve('src/pages/blogpost.js');
+  const blogpostTemplate = path.resolve('src/components/blogpost.js');
 
   return graphql(`{
     allMarkdownRemark {
