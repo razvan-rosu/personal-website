@@ -11,6 +11,7 @@ export default function Template({data}) {
     <Layout>
       <SEO title={blogpost.frontmatter.title} />
       <h1>{blogpost.frontmatter.title}</h1>
+      <p>date: {blogpost.frontmatter.date}</p>
       <p>path: {blogpost.frontmatter.path}</p>
       <div dangerouslySetInnerHTML={{__html: blogpost.html}}></div>
     </Layout>
@@ -24,6 +25,7 @@ export const postQuery = graphql`
       frontmatter {
         path
         title
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
