@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "./layout";
 import SEO from "./seo";
+import Img from "gatsby-image";
 
 import { graphql } from "gatsby";
 
@@ -11,6 +12,11 @@ export default function Template({ data }) {
     <Layout>
       <SEO title={blogpost.frontmatter.title} />
       <h1>{blogpost.frontmatter.title}</h1>
+      <Img
+        sizes={blogpost.frontmatter.featuredImage.childImageSharp.sizes}
+        title={blogpost.frontmatter.title}
+        alt={blogpost.frontmatter.title}
+      />
       <p>date: {blogpost.frontmatter.date}</p>
       <p>path: {blogpost.frontmatter.path}</p>
       <div dangerouslySetInnerHTML={{ __html: blogpost.html }} />
@@ -26,6 +32,13 @@ export const postQuery = graphql`
         path
         title
         date(formatString: "MMMM DD, YYYY")
+        featuredImage {
+          childImageSharp {
+            sizes {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
