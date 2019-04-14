@@ -1,5 +1,5 @@
 ---
-path: '/ideas-to-share'
+path: '/blog/ideas-to-share'
 title: 'Ideas to share'
 date: '2019-03-27T22:40:32.169Z'
 featuredImage: './featured-image.jpg'
