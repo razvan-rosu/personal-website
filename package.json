@@ -28,6 +28,7 @@
     }
   ],
   "devDependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
     "prettier": "^1.16.4"
   },
   "keywords": [
