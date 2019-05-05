@@ -1,3 +1,9 @@
+# Production files
+public
+
+# IDE
+.idea
+
 # Logs
 logs
 *.log
