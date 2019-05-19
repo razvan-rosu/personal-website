@@ -1,9 +1,9 @@
 module.exports = {
   pathPrefix: `/personal-website`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `Răzvan Roșu + GatsbyJS = <3`,
+    title: `Personal website`,
+    description: `My own little (web) world`,
+    author: `Răzvan Roșu`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,11 +27,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `RR`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#FF2400`,
+        theme_color: `#FF2400`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
