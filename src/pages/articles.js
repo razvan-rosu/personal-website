@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
+import Filters from "../components/filters"
 import SEO from "../components/seo";
 
-const ArticlesPage = ({data}) => (
+const ArticlesPage = ({ data }) => (
   <Layout>
     <SEO title="Page Articles" />
     <h1>Hi from the Articles page</h1>
@@ -13,14 +14,14 @@ const ArticlesPage = ({data}) => (
     <ul>
       {data.allMarkdownRemark.edges.map(post => (
         <li key={post.node.id}>
-          <a href={post.node.frontmatter.path}>
-            {post.node.frontmatter.title}
-          </a>
+          <Link to={post.node.frontmatter.path}>{post.node.frontmatter.title}</Link>
         </li>
       ))}
     </ul>
 
     <Link to="/">Go back to the homepage</Link>
+
+    <Filters></Filters>
   </Layout>
 );
 
