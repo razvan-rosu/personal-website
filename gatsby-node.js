@@ -25,6 +25,7 @@ exports.createPages = ({actions, graphql}) => {
             path
             title
             date
+            tags
           }
         }
       }
