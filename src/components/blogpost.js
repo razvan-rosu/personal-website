@@ -19,6 +19,7 @@ export default function Template({ data }) {
       />
       <p>date: {blogpost.frontmatter.date}</p>
       <p>path: {blogpost.frontmatter.path}</p>
+      <p>tags: {blogpost.frontmatter.tags}</p>
       <div dangerouslySetInnerHTML={{ __html: blogpost.html }} />
     </Layout>
   );
