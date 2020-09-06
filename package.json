@@ -2,24 +2,24 @@
   "name": "gatsby-starter-default",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Răzvan Roșu <razvan-rosu@outlook.com>",
   "dependencies": {
-    "core-js": "2",
-    "gatsby": "^2.2.5",
+    "core-js": "3.6.5",
+    "gatsby": "^2.24.53",
     "gatsby-image": "^2.0.37",
-    "gatsby-plugin-manifest": "^2.0.24",
-    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-manifest": "^2.4.27",
+    "gatsby-plugin-offline": "^3.2.26",
     "gatsby-plugin-react-helmet": "^3.0.10",
-    "gatsby-plugin-sharp": "^2.0.30",
-    "gatsby-source-filesystem": "^2.0.27",
-    "gatsby-transformer-remark": "^2.3.8",
-    "gatsby-transformer-sharp": "^2.1.17",
-    "gh-pages": "^2.0.1",
+    "gatsby-plugin-sharp": "^2.6.31",
+    "gatsby-source-filesystem": "^2.3.27",
+    "gatsby-transformer-remark": "^2.8.32",
+    "gatsby-transformer-sharp": "^2.5.14",
+    "gh-pages": "^3.1.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^6.1.0"
   },
   "presets": [
     "@babel/preset-env",
@@ -29,7 +29,7 @@
   ],
   "devDependencies": {
     "@hot-loader/react-dom": "^16.8.6",
-    "prettier": "^1.16.4"
+    "prettier": "^2.1.1"
   },
   "keywords": [
     "gatsby"
