@@ -27,13 +27,21 @@ const ArticlesPage = ({ data }) => (
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(limit: 10) {
+    allMarkdownRemark(
+      sort: {
+        fields: [frontmatter___date],
+        order: [DESC],
+      },
+      limit: 10
+    ) {
       edges {
         node {
           id
           frontmatter {
             path
             title
+            date
+            tags
           }
         }
       }
