@@ -33,6 +33,7 @@ export const postQuery = graphql`
         path
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
         featuredImage {
           childImageSharp {
             sizes {
