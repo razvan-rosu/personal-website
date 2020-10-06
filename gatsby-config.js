@@ -6,6 +6,7 @@ module.exports = {
     author: `Răzvan Roșu`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

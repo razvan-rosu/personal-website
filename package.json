@@ -2,14 +2,16 @@
   "name": "gatsby-starter-default",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.2",
+  "version": "0.3.0",
   "author": "Răzvan Roșu <razvan-rosu@outlook.com>",
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "core-js": "3.6.5",
     "gatsby": "^2.24.53",
     "gatsby-image": "^2.0.37",
     "gatsby-plugin-manifest": "^2.4.27",
     "gatsby-plugin-offline": "^3.2.26",
+    "gatsby-plugin-postcss": "^3.0.0",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sharp": "^2.6.31",
     "gatsby-source-filesystem": "^2.3.27",
@@ -19,7 +21,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0",
+    "tailwindcss": "^1.8.10"
   },
   "presets": [
     "@babel/preset-env",
