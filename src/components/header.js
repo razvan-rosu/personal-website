@@ -3,32 +3,34 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <nav className="bg-pomegranate p-6">
+    <div className="container mx-auto">
+      <div className="flex items-center justify-between flex-wrap text-white">
+        <div className="flex items-center flex-shrink-0 mr-6">
+          <h1 className="font-semibold text-xl tracking-tight">
+            <Link to="/">
+              {siteTitle}
+            </Link>
+          </h1>
+        </div>
+        <div className="block lg:hidden">
+          <button
+            className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+            </svg>
+          </button>
+        </div>
+        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div className="text-sm lg:flex-grow">
+            <Link className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" to="/articles/">Articles</Link>
+            <Link className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" to="/codes/">Codes</Link>
+            <Link className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" to="/contact/">Contact</Link>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
+  </nav>
 );
 
 Header.propTypes = {

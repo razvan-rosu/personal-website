@@ -1,27 +1,43 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
+import { FiArrowLeft, FiArrowUp } from 'react-icons/fi';
 
 import Layout from "../components/layout";
-import Filters from "../components/filters"
+// import Filters from "../components/filters"
 import SEO from "../components/seo";
 
 const ArticlesPage = ({ data }) => (
   <Layout>
     <SEO title="Page Articles" />
-    <h1>Hi from the Articles page</h1>
-    <p>Welcome to Articles</p>
-
+    <h1 className="text-4xl font-extrabold text-midnight">Articles</h1>
+    <h2 className="text-2xl font-bold text-midnight">Here's what I've been up to:</h2>
     <ul>
       {data.allMarkdownRemark.edges.map(post => (
-        <li key={post.node.id}>
-          <Link to={post.node.frontmatter.path}>{post.node.frontmatter.title}</Link>
+        <li key={post.node.id} className="my-5">
+          <div className="w-full border border-concrete lg:border lg:border-gray-400 bg-white rounded-b lg:rounded p-4 flex flex-col justify-between leading-normal">
+            <h3 className="text-midnight font-bold text-xl mb-2">
+              <Link to={post.node.frontmatter.path}>
+                {post.node.frontmatter.title}
+              </Link>
+            </h3>
+            <div className="flex items-center">
+              <span className="inline-block bg-clouds rounded-full px-3 py-1 text-sm font-semibold text-concrete mr-2 mb-2">#photography</span>
+            </div>
+          </div>
         </li>
       ))}
     </ul>
-
-    <Link to="/">Go back to the homepage</Link>
-
-    <Filters></Filters>
+    <div className="flex justify-between text-concrete">
+      <Link to="/">
+        <FiArrowLeft className="inline align-middle" />
+        <span className="align-middle">Go to the homepage</span>
+      </Link>
+      <a href="#">
+        <span className="align-middle">Go to top</span>
+        <FiArrowUp className="inline align-middle" />
+      </a>
+    </div>
+    {/*<Filters></Filters>*/}
   </Layout>
 );
 

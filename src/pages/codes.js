@@ -3,13 +3,19 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { FiArrowLeft } from "react-icons/fi";
 
 const CodesPage = () => (
   <Layout>
     <SEO title="Page Codes" />
-    <h1>Hi from the Codes page</h1>
-    <p>Welcome to Codes</p>
-    <Link to="/">Go back to the homepage</Link>
+    <article>
+      <h1 className="text-4xl font-extrabold text-midnight">Codes</h1>
+      <h2 className="text-2xl font-bold text-midnight">Welcome to my laboratory!</h2>
+      <Link className="text-concrete" to="/">
+        <FiArrowLeft className="inline align-middle" />
+        <span className="align-middle">Go to the homepage</span>
+      </Link>
+    </article>
   </Layout>
 );
 
