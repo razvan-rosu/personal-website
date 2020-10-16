@@ -13,17 +13,23 @@ export default function Template({ data }) {
     <Layout>
       <SEO title={blogpost.frontmatter.title} />
       <article className="prose mx-auto">
-        <h1>{blogpost.frontmatter.title}</h1>
+        <h1 class="break-words">{blogpost.frontmatter.title}</h1>
         <Img
           sizes={blogpost.frontmatter.featuredImage.childImageSharp.sizes}
           title={blogpost.frontmatter.title}
           alt={blogpost.frontmatter.title}
         />
-        <div className="flex items-center justify-between">
-          <span className="inline-block bg-concrete rounded-full px-3 py-1 text-sm font-semibold text-clouds">{blogpost.frontmatter.tags}</span>
+        <div className="flex flex-col-reverse sm:flex-row items-center sm:justify-between">
+          <div>
+            {
+              blogpost.frontmatter.tags.split(', ').map(tag => (
+                <span className="inline-block bg-concrete rounded-full mx-1 sm:mr-2 sm:ml-0 px-3 py-1 text-sm font-semibold text-clouds">#{tag}</span>
+              ))
+            }
+          </div>
           <p className="text-sm font-semibold text-right">Posted on: <time datetime={blogpost.frontmatter.date}>{blogpost.frontmatter.date}</time></p>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: blogpost.html }} />
+        <div class="text-justify sm:text-left" dangerouslySetInnerHTML={{ __html: blogpost.html }} />
       </article>
       <Link className="inline-block sm:mt-8 text-concrete" to="/articles">
         <FiArrowLeft className="inline align-middle" />
