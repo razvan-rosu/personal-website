@@ -32,7 +32,7 @@ const ArticlesPage = ({ data }) => (
         <FiArrowLeft className="inline align-middle" />
         <span className="align-middle">Go to the homepage</span>
       </Link>
-      <a href="#">
+      <a href="#top">
         <span className="align-middle">Go to top</span>
         <FiArrowUp className="inline align-middle" />
       </a>

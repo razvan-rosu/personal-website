@@ -15,13 +15,13 @@ const Footer = () => (
           Made with <span className="text-amethyst font-medium">GatsbyJS</span> &amp; <span className="font-medium text-greensea">TailwindCSS</span>  &copy; Răzvan Roșu { new Date().getFullYear() }
         </p>
         <div className="flex items-center justify-center flex-shrink-0 pb-2 mt-2">
-          <a className="mr-2 hover:text-scarlet" target="_blank" href="https://www.linkedin.com/in/razvan-rosu/">
+          <a className="mr-2 hover:text-scarlet" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/razvan-rosu/">
             <FiLinkedin />
           </a>
-          <a className="mr-2 hover:text-scarlet" target="_blank" href="https://github.com/razvan-rosu/">
+          <a className="mr-2 hover:text-scarlet" target="_blank" rel="noreferrer" href="https://github.com/razvan-rosu/">
             <FiGithub />
           </a>
-          <a className="hover:text-scarlet" target="_blank" href="https://twitter.com/rzvn_rosu">
+          <a className="hover:text-scarlet" target="_blank" rel="noreferrer" href="https://twitter.com/rzvn_rosu">
             <FiTwitter />
           </a>
         </div>
