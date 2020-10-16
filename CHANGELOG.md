@@ -1,5 +1,10 @@
 # Realeases:
 
+### 0.4.0 feat
+- display each tag individually on blogpost
+- justify text on mobile on blogpost
+- word split blogpost title
+
 ### 0.3.1 bugfix
 - remove unused import [eslint]
 - rename Go-to-Top link [a11y]
