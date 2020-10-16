@@ -2,7 +2,7 @@
   "name": "gatsby-starter-default",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "author": "Răzvan Roșu <razvan-rosu@outlook.com>",
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
