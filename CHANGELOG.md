@@ -1,5 +1,10 @@
 # Realeases:
 
+### 0.5.0 feat
+- use `Indie Flower` font as mvp logo
+- change burger menu breakpoints lg => md
+- add custom favicon
+
 ### 0.4.0 feat
 - display each tag individually on blogpost
 - justify text on mobile on blogpost
