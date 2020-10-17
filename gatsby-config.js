@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/personal-website`,
   siteMetadata: {
-    title: `Personal website`,
+    title: `Răzvan Roșu`,
     description: `My own little (web) world`,
     author: `Răzvan Roșu`,
   },
