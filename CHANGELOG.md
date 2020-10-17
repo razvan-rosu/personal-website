@@ -1,5 +1,10 @@
 # Realeases:
 
+### 0.6.0 feat
+- make blogpost banner full-width on mobile
+- fix blogpost banner height
+- update deprecated Img attr `sizes` => `fluid`
+
 ### 0.5.0 feat
 - use `Indie Flower` font as mvp logo
 - change burger menu breakpoints lg => md
