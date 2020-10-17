@@ -13,7 +13,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO title={blogpost.frontmatter.title} />
       <article className="prose mx-auto">
-        <h1 class="break-words">{blogpost.frontmatter.title}</h1>
+        <h1 className="break-words">{blogpost.frontmatter.title}</h1>
         <Img
           className="Blogpost-banner -mx-6 md:mx-0"
           fluid={blogpost.frontmatter.featuredImage.childImageSharp.sizes}
@@ -24,13 +24,13 @@ export default function Template({ data }) {
           <div>
             {
               blogpost.frontmatter.tags.split(', ').map(tag => (
-                <span className="inline-block bg-concrete rounded-full mx-1 sm:mr-2 sm:ml-0 px-3 py-1 text-sm font-semibold text-clouds">#{tag}</span>
+                <span key={tag} className="inline-block bg-concrete rounded-full mx-1 sm:mr-2 sm:ml-0 px-3 py-1 text-sm font-semibold text-clouds">#{tag}</span>
               ))
             }
           </div>
-          <p className="text-sm font-semibold text-right">Posted on: <time datetime={blogpost.frontmatter.date}>{blogpost.frontmatter.date}</time></p>
+          <p className="text-sm font-semibold text-right">Posted on: <time dateTime={blogpost.frontmatter.date}>{blogpost.frontmatter.date}</time></p>
         </div>
-        <div class="text-justify sm:text-left" dangerouslySetInnerHTML={{ __html: blogpost.html }} />
+        <div className="text-justify sm:text-left" dangerouslySetInnerHTML={{ __html: blogpost.html }} />
       </article>
       <Link className="inline-block sm:mt-8 text-concrete" to="/articles">
         <FiArrowLeft className="inline align-middle" />
