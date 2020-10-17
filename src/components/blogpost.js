@@ -15,7 +15,8 @@ export default function Template({ data }) {
       <article className="prose mx-auto">
         <h1 class="break-words">{blogpost.frontmatter.title}</h1>
         <Img
-          sizes={blogpost.frontmatter.featuredImage.childImageSharp.sizes}
+          className="Blogpost-banner -mx-6 md:mx-0"
+          fluid={blogpost.frontmatter.featuredImage.childImageSharp.sizes}
           title={blogpost.frontmatter.title}
           alt={blogpost.frontmatter.title}
         />
