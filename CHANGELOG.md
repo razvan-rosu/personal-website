@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.6.2 bugfix
+- display dynamic tags on articles page
+
 ### 0.6.1 bugfix
 - fix: camelCase `dateTime` attr [jsx]
 - fix: add `key` to iteration [jsx]

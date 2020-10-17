@@ -20,8 +20,12 @@ const ArticlesPage = ({ data }) => (
                 {post.node.frontmatter.title}
               </Link>
             </h3>
-            <div className="flex items-center">
-              <span className="inline-block bg-clouds rounded-full px-3 py-1 text-sm font-semibold text-concrete mr-2 mb-2">#photography</span>
+            <div className="flex items-center justify-center sm:justify-start">
+              {
+                post.node.frontmatter.tags.split(', ').map(tag => (
+                  <span key={tag} className="inline-block bg-clouds rounded-full px-3 py-1 text-sm font-semibold text-concrete mx-1 sm:ml-0 sm:mr-2">#{tag}</span>
+                ))
+              }
             </div>
           </div>
         </li>
