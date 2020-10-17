@@ -1,5 +1,10 @@
 # Realeases:
 
+### 0.6.1 bugfix
+- fix: camelCase `dateTime` attr [jsx]
+- fix: add `key` to iteration [jsx]
+- fix: rename `class` to `className` [jsx]
+
 ### 0.6.0 feat
 - make blogpost banner full-width on mobile
 - fix blogpost banner height
