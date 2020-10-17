@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.6.3 bugfix
+- fix: add mobile menu toggle functionality
+
 ### 0.6.2 bugfix
 - display dynamic tags on articles page
 
