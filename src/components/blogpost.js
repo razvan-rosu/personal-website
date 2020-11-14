@@ -32,9 +32,9 @@ export default function Template({ data }) {
         </div>
         <div className="text-justify sm:text-left" dangerouslySetInnerHTML={{ __html: blogpost.html }} />
       </article>
-      <Link className="inline-block sm:mt-8 text-concrete" to="/articles">
+      <Link className="inline-block sm:mt-8 text-concrete" to="/">
         <FiArrowLeft className="inline align-middle" />
-        <span className="align-middle">Back to articles</span>
+        <span className="align-middle">Back to homepage</span>
       </Link>
     </Layout>
   );
