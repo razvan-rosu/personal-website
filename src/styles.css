@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 .Logo {
   font-size: 2.5em;
   line-height: 1;
-  font-family: 'Indie Flower', cursive;
 }
 
 .Footer-name {
   font-size: 1.25em;
   line-height: 1;
-  font-family: 'Indie Flower', cursive;
 }
 
 /**
