@@ -1,5 +1,10 @@
 # Realeases:
 
+### 0.6.5 refactor
+- set articles as homepage
+- remove empty pages
+- refactor links
+
 ### 0.6.4 bugfix
 - fix: configure handwritten font in tailwind.config
 
