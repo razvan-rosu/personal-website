@@ -10,7 +10,7 @@ function Header({ siteTitle }) {
       <div className="container mx-auto">
         <div className="flex items-center justify-between flex-wrap text-white">
           <div className="flex items-center flex-shrink-0 mr-6">
-            <Link className="Logo" to="/">
+            <Link className="Logo font-handwritten" to="/">
               {siteTitle}
             </Link>
           </div>

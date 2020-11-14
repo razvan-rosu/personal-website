@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.6.4 bugfix
+- fix: configure handwritten font in tailwind.config
+
 ### 0.6.3 bugfix
 - fix: add mobile menu toggle functionality
 

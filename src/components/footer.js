@@ -12,7 +12,7 @@ const Footer = () => (
     <div className="bg-concrete-200 px-6">
       <div className="container mx-auto sm:flex sm:justify-between">
         <p className="select-none text-center pt-2 mb-2">
-          Made with <span className="text-amethyst font-medium">GatsbyJS</span> &amp; <span className="font-medium text-greensea">TailwindCSS</span>  &copy; <span className="Footer-name">Răzvan Roșu</span> { new Date().getFullYear() }
+          Made with <span className="text-amethyst font-medium">GatsbyJS</span> &amp; <span className="font-medium text-greensea">TailwindCSS</span>  &copy; <span className="Footer-name font-handwritten">Răzvan Roșu</span> { new Date().getFullYear() }
         </p>
         <div className="flex items-center justify-center flex-shrink-0 pb-2 mt-2">
           <a className="mr-3 hover:text-scarlet" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/razvan-rosu/">

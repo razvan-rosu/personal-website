@@ -17,8 +17,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        handwritten: ['Allura', "cursive"],
       },
     },
   },
