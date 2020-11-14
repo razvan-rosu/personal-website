@@ -25,12 +25,8 @@ function Header({ siteTitle }) {
           </div>
           <div className={`${ isExpanded ? `block` : `hidden` } w-full md:flex md:items-center md:w-auto`}>
             <div className="text-sm md:flex-grow">
-              <Link className="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4"
-                    to="/articles/">Articles</Link>
-              <Link className="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4"
-                    to="/codes/">Codes</Link>
-              <Link className="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4"
-                    to="/contact/">Contact</Link>
+              <Link className="block mt-4 md:inline-block md:mt-0 text-teal-200 hover:text-white mr-4 md:mr-0"
+                    to="/contact/">Get in touch</Link>
             </div>
           </div>
         </div>
