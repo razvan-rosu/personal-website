@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
         <li key={post.node.id} className="my-5">
           <div className="w-full border border-concrete lg:border lg:border-gray-400 bg-white rounded-b lg:rounded p-4 flex flex-col justify-between leading-normal">
             <h3 className="text-midnight font-bold text-xl mb-2">
-              <Link to={post.node.frontmatter.path}>
+              <Link to={post.node.frontmatter.path} className="focus:outline-none focus:shadow-outline">
                 {post.node.frontmatter.title}
               </Link>
             </h3>
@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => (
       ))}
     </ul>
     <div className="flex justify-end text-concrete">
-      <a href="#top">
+      <a href="#top" className="focus:outline-none focus:shadow-outline">
         <span className="align-middle">Go to top</span>
         <FiArrowUp className="inline align-middle" />
       </a>
