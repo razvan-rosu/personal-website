@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
+#___gatsby { overflow: hidden; }
+nav, .container, footer { position: relative; z-index: 10; }
+
 .Logo {
   font-size: 2.5em;
   line-height: 1;
@@ -16,4 +19,91 @@
 .Blogpost-banner img {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/**
+ * Contact Page
+ */
+.Contact-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Contact-input,
+.Contact-dropdown {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 374px) {
+  .Contact-input { max-width: 165px; }
+}
+
+.Contact-dropdown {
+  appearance: none;
+  text-align-last: center;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAxNiAxNiIgaGVpZ2h0PSIxZW0iIHdpZHRoPSIxZW0iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMy4yMDQgNUw4IDEwLjQ4MSAxMi43OTYgNUgzLjIwNHptLS43NTMuNjU5bDQuNzk2IDUuNDhhMSAxIDAgMDAxLjUwNiAwbDQuNzk2LTUuNDhjLjU2Ni0uNjQ3LjEwNi0xLjY1OS0uNzUzLTEuNjU5SDMuMjA0YTEgMSAwIDAwLS43NTMgMS42NTl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48L3N2Zz4=');
+  background-repeat: no-repeat;
+  background-position: right 0 top 50%;
+  background-size: .65em auto;
+}
+
+.Contact-dropdown::-ms-expand {
+  display: none;
+}
+
+.Contact-inputWrap {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.Contact-inputWrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.Contact-textareaWrap {
+  position: relative;
+  max-width: 540px;
+}
+
+.Contact-textareaWrap::before,
+.Contact-textareaWrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.Contact-textareaWrap::before {top: 25px;}
+.Contact-textareaWrap::after {bottom: 10px;}
+
+.Contact-textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.Contact-coffee {
+  position: absolute;
+  top: -20px;
+  right: -250px;
+  z-index: 0;
 }

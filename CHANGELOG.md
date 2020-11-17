@@ -1,5 +1,9 @@
 # Realeases:
 
+### 0.7.0 feat
+- add contact form
+- improve a11y
+
 ### 0.6.5 refactor
 - set articles as homepage
 - remove empty pages

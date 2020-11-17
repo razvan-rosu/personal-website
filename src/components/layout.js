@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
       <>
         <div className="flex flex-col min-h-screen justify-between bg-clouds">
           <Header siteTitle={data.site.siteMetadata.title} />
-          <main className="mb-auto p-6">
+          <main className="mb-auto py-6 px-4">
             <div className="container mx-auto">
               {children}
             </div>
