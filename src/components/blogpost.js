@@ -12,6 +12,19 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title={blogpost.frontmatter.title} />
+      <style dangerouslySetInnerHTML={{__html: `
+        .prose a::after {
+          content: '';
+          display: inline-block;
+          margin-left: 2px;
+          height: 16px;
+          width: 16px;
+          vertical-align: text-bottom;
+          /* react-icons: FiExternalLink */
+          background-image: url('data:image/svg+xml;utf8,<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>');
+          background-size: 16px 16px;
+        `}}>
+      </style>
       <article className="prose mx-auto">
         <h1 className="break-words">{blogpost.frontmatter.title}</h1>
         <Img
