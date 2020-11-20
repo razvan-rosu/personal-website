@@ -6,6 +6,15 @@ module.exports = {
     author: `Răzvan Roșu`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-Y0H0RNM65X",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+      },
+    },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     {
