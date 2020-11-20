@@ -13,8 +13,8 @@ const ContactFormPage = () => (
     <section className="Contact">
       <h1 className="text-4xl text-center text-midnight">Contact</h1>
 
-      <form name="Contact Form"
-            className="text-2xl font-handwritten text-midnight"
+      <form className="text-2xl font-handwritten text-midnight"
+            name="contact"
             method="POST"
             data-netlify="true"
             action="/thank-you">
@@ -48,11 +48,11 @@ const ContactFormPage = () => (
         </span>
         <br/>
 
-        <button type="submit" className="w-full sm:w-auto mt-8 bg-transparent hover:bg-greensea text-greensea font-semibold hover:text-white px-4 border border-text-greensea rounded
-                                        focus:outline-none focus:shadow-outline">
-          <IoIosPaperPlane className="inline align-middle mr-2" />
-          <span className="align-middle mr-2">Send</span>
-        </button>
+        <button type="submit" className="w-full sm:w-auto mt-8 bg-transparent hover:bg-greensea text-greensea font-sans hover:text-white px-4 border border-text-greensea rounded
+                                        focus:outline-none focus:shadow-outline"
+          ><IoIosPaperPlane className="inline align-text-bottom mr-2"
+          /><span className="text-lg align-text-bottom mr-2">Send</span
+        ></button>
       </form>
       <img className="Contact-coffee hidden md:block" src={CoffeeCup} alt="Cup of Coffee"/>
     </section>
