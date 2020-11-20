@@ -8,10 +8,10 @@ tags: 'mentorship'
 
 PepinTeen is a project developed by ING Tech Romania in partnership with Școala de Valori. 
 The programme was designed as a blended learning opportunity of IT knowledge with soft skills with the sole purpose of giving teens a boost in their career paths.
-It spanned from September 2018 to June 2019, in 3 romanian cities: Bucharest, Giurgiu and Pucioasa, reaching a total of 150 curious teenagers.
+It spanned from September 2018 to June 2019, in 3 cities: Bucharest, Giurgiu and Pucioasa, reaching a total of 150 curious teenagers.
 
 As a technical trainer, I’ve contributed to several whole day IT presentations and workshops. 
-To top it off, I’ve coached one talented teenager in a one-on-one manner at the end of the programme.
+To top it off, I’ve coached one talented teenager in a 1:1 manner at the end of the programme.
 
 Links:
 - <https://ing.ro/ithub#tech-for-good>

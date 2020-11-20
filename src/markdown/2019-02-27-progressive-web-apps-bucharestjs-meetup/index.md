@@ -6,7 +6,7 @@ featuredImage: './featured-image.jpg'
 tags: 'frontend, research'
 ---
 
-I've held a 20 minutes talk at BucharestJS Meetup, showcasing the current state of Progressive Web Apps at that time.
-The presentation's demo was based on a LitHTML + LitElement technologies.
+I've held a full talk at BucharestJS Meetup, showcasing the current state of Progressive Web Apps at the time.
+The presentation's demo was based on LitHTML and LitElement technologies.
 
 The slides are available [here](https://speakerdeck.com/rzvnrosu/progressive-web-apps-with-lithtml-bucharestjs-meetup).

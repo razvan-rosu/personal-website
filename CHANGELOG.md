@@ -1,5 +1,10 @@
 # Realeases:
 
+### 0.7.1 chore
+- update README.md
+- add .editorconfig file
+- update markdown content
+
 ### 0.7.0 feat
 - add contact form
 - improve a11y
