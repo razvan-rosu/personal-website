@@ -1,5 +1,9 @@
 # Realeases:
 
+### 0.7.3 chore
+- update dependencies
+- add google analytics
+
 ### 0.7.2 style
 - add external link icon after links in blog posts
 - update font of submit button
