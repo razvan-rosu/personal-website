@@ -1,9 +1,19 @@
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://www.razvanrosu.com',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env;
+const isNetlifyProduction = NETLIFY_ENV === 'production';
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
 module.exports = {
   pathPrefix: `/personal-website`,
   siteMetadata: {
     title: `Răzvan Roșu`,
     description: `My own little (web) world`,
     author: `Răzvan Roșu`,
+    siteUrl
   },
   plugins: [
     {
@@ -44,6 +54,39 @@ module.exports = {
         theme_color: `#FF2400`,
         display: `minimal-ui`,
         icon: `src/images/rr.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        exclude: [
+          `/dev-404-page`,
+          `/404`,
+          `/404.html`,
+          `/offline-plugin-app-shell-fallback`,
+          `/thank-you`,
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: '*', disallow: ['/thank-you', '/404']}],
+          },
+          'branch-deploy': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null,
+          },
+          'deploy-preview': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null,
+          },
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
