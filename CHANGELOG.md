@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.7.6 bugfix
+- fix netlify contact form
+
 ### 0.7.5 SEO
 - add robots
 - add sitemap
