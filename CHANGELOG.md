@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.7.4 performance
+- configure Tailwind to Purge unused CSS
+
 ### 0.7.3 chore
 - update dependencies
 - add google analytics
