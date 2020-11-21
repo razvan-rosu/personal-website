@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.7.7 bugfix
+- fix appearance of select tag on Safari MacOS
+
 ### 0.7.6 bugfix
 - fix netlify contact form
 
