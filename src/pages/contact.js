@@ -17,15 +17,28 @@ const ContactFormPage = () => (
             name="contact"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             action="/thank-you">
+        <input type="hidden"
+               aria-hidden="true"
+               name="form-name"
+               value="contact" />
         <h2 className="text-3xl mb-8">If you're social media shy, you can message me here!</h2>
         <label htmlFor="name" className="Contact-label">My name is</label>
         <span className="Contact-inputWrap">
-          <input type="text" name="name" id="name" className="Contact-input focus:outline-none focus:shadow-outline" placeholder="John Doe" required />
+          <input type="text"
+                 name="name"
+                 id="name"
+                 className="Contact-input focus:outline-none focus:shadow-outline"
+                 placeholder="John Doe"
+                 required />
         </span>,&nbsp;
         <br/>
         I'm a <span className="Contact-inputWrap">
-          <select name="role" id="role" className="Contact-dropdown focus:outline-none focus:shadow-outline" required>
+          <select name="role"
+                  id="role"
+                  className="Contact-dropdown focus:outline-none focus:shadow-outline"
+                  required>
             <option value="default" selected disabled hidden>Visionary</option>
             <option value="ux">UX Designer</option>
             <option value="ui">UI Designer</option>
@@ -39,12 +52,21 @@ const ContactFormPage = () => (
         </span>&nbsp;
         and I'd like to talk to you <label htmlFor="message" className="Contact-label">about:</label>
         <div className="Contact-textareaWrap">
-          <textarea name="message" id="message"  className="Contact-textarea focus:outline-none focus:shadow-outline" placeholder="an open source project" required></textarea>
+          <textarea name="message"
+                    id="message"
+                    className="Contact-textarea focus:outline-none focus:shadow-outline"
+                    placeholder="an open source project"
+                    required></textarea>
         </div>
 
         You can reach me at the following <label htmlFor="email" className="Contact-label">e-mail address:</label>
         <span className="Contact-inputWrap">
-          <input type="email" name="email" id="email" className="Contact-input focus:outline-none focus:shadow-outline" placeholder="john.doe@email.com" required />
+          <input type="email"
+                 name="email"
+                 id="email"
+                 className="Contact-input focus:outline-none focus:shadow-outline"
+                 placeholder="john.doe@email.com"
+                 required />
         </span>
         <br/>
 
