@@ -36,4 +36,12 @@ module.exports = {
       })
     }
   ],
+  purge: {
+    enabled: true,
+    layers: ['components', 'utilities'],
+    content: [
+      './src/components/*.js',
+      './src/pages/*.js',
+    ],
+  },
 }
