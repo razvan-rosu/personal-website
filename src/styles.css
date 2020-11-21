@@ -35,6 +35,7 @@ nav, .container, footer { position: relative; z-index: 10; }
   width: 100%;
   border: none;
   background: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   text-align: center;
 }
@@ -44,7 +45,10 @@ nav, .container, footer { position: relative; z-index: 10; }
 }
 
 .Contact-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
+  -moz-text-align-last: center;
   text-align-last: center;
   background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAxNiAxNiIgaGVpZ2h0PSIxZW0iIHdpZHRoPSIxZW0iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMy4yMDQgNUw4IDEwLjQ4MSAxMi43OTYgNUgzLjIwNHptLS43NTMuNjU5bDQuNzk2IDUuNDhhMSAxIDAgMDAxLjUwNiAwbDQuNzk2LTUuNDhjLjU2Ni0uNjQ3LjEwNi0xLjY1OS0uNzUzLTEuNjU5SDMuMjA0YTEgMSAwIDAwLS43NTMgMS42NTl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48L3N2Zz4=');
   background-repeat: no-repeat;
@@ -97,6 +101,7 @@ nav, .container, footer { position: relative; z-index: 10; }
   width: 100%;
   border: none;
   background: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   resize: none;
 }
