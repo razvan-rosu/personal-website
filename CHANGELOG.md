@@ -1,5 +1,9 @@
 # Realeases:
 
+### 0.7.5 SEO
+- add robots
+- add sitemap
+
 ### 0.7.4 performance
 - configure Tailwind to Purge unused CSS
 
