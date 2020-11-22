@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.7.8 SEO
+- swap GA for Yandex Metrica
+
 ### 0.7.7 bugfix
 - fix appearance of select tag on Safari MacOS
 
