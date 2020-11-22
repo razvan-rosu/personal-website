@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const {
   NODE_ENV,
   URL: NETLIFY_SITE_URL = 'https://www.razvanrosu.com',
@@ -17,13 +21,15 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-yandex-metrica`,
       options: {
-        trackingId: "G-Y0H0RNM65X",
-        head: false,
-        anonymize: true,
-        respectDNT: true,
-      },
+        trackingId: process.env.METRICA_TRACKING_ID,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        trackHash: true,
+        webvisor: true,
+      }
     },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
