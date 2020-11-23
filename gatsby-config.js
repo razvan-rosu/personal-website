@@ -7,7 +7,7 @@ const {
 } = process.env;
 const isNetlifyProduction = NETLIFY_ENV === 'production';
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
-const metricaID = isNetlifyProduction ? METRICA_TRACKING_ID : `deploy-preview-${METRICA_TRACKING_ID}`;
+const metricaID = !isNetlifyProduction ? METRICA_TRACKING_ID : `deploy-preview-${METRICA_TRACKING_ID}`;
 
 module.exports = {
   pathPrefix: `/personal-website`,
@@ -22,11 +22,11 @@ module.exports = {
       resolve: `gatsby-plugin-yandex-metrica`,
       options: {
         trackingId: metricaID,
-        clickmap: isNetlifyProduction,
-        trackLinks: isNetlifyProduction,
-        accurateTrackBounce: isNetlifyProduction,
-        trackHash: isNetlifyProduction,
-        webvisor: isNetlifyProduction,
+        clickmap: !isNetlifyProduction,
+        trackLinks: !isNetlifyProduction,
+        accurateTrackBounce: !isNetlifyProduction,
+        trackHash: !isNetlifyProduction,
+        webvisor: !isNetlifyProduction,
       }
     },
     `gatsby-plugin-postcss`,
