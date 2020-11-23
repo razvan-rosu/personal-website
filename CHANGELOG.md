@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.7.9 bugfix
+- fix YM tracking only PROD
+
 ### 0.7.8 SEO
 - swap GA for Yandex Metrica
 
