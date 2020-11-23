@@ -1,15 +1,13 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 const {
   NODE_ENV,
   URL: NETLIFY_SITE_URL = 'https://www.razvanrosu.com',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
+  METRICA_TRACKING_ID,
 } = process.env;
 const isNetlifyProduction = NETLIFY_ENV === 'production';
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+const metricaID = isNetlifyProduction ? METRICA_TRACKING_ID : `deploy-preview-${METRICA_TRACKING_ID}`;
 
 module.exports = {
   pathPrefix: `/personal-website`,
@@ -23,33 +21,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-yandex-metrica`,
       options: {
-        resolveEnv: () => NETLIFY_ENV,
-        env: {
-          production: {
-            trackingId: null,
-            clickmap: true,
-            trackLinks: false,
-            accurateTrackBounce: false,
-            trackHash: false,
-            webvisor: true,
-          },
-          'branch-deploy': {
-            trackingId: `branch-deploy-${process.env.METRICA_TRACKING_ID}`,
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            trackHash: true,
-            webvisor: false,
-          },
-          'deploy-preview': {
-            trackingId: `deploy-preview-${process.env.METRICA_TRACKING_ID}`,
-            clickmap: false,
-            trackLinks: false,
-            accurateTrackBounce: false,
-            trackHash: false,
-            webvisor: true,
-          },
-        }
+        trackingId: metricaID,
+        clickmap: isNetlifyProduction,
+        trackLinks: isNetlifyProduction,
+        accurateTrackBounce: isNetlifyProduction,
+        trackHash: isNetlifyProduction,
+        webvisor: isNetlifyProduction,
       }
     },
     `gatsby-plugin-postcss`,
