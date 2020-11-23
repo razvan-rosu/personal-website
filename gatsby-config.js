@@ -23,12 +23,33 @@ module.exports = {
     {
       resolve: `gatsby-plugin-yandex-metrica`,
       options: {
-        trackingId: process.env.METRICA_TRACKING_ID,
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        trackHash: true,
-        webvisor: true,
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            trackingId: null,
+            clickmap: true,
+            trackLinks: false,
+            accurateTrackBounce: false,
+            trackHash: false,
+            webvisor: true,
+          },
+          'branch-deploy': {
+            trackingId: `branch-deploy-${process.env.METRICA_TRACKING_ID}`,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            trackHash: true,
+            webvisor: false,
+          },
+          'deploy-preview': {
+            trackingId: `deploy-preview-${process.env.METRICA_TRACKING_ID}`,
+            clickmap: false,
+            trackLinks: false,
+            accurateTrackBounce: false,
+            trackHash: false,
+            webvisor: true,
+          },
+        }
       }
     },
     `gatsby-plugin-postcss`,
