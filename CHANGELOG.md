@@ -1,5 +1,8 @@
 # Realeases:
 
+### 0.8.0 feat
+- add About Me carousel
+
 ### 0.7.9 bugfix
 - fix YM tracking only PROD
 
