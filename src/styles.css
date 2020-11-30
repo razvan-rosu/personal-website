@@ -22,6 +22,116 @@ nav, .container, footer { position: relative; z-index: 10; }
 }
 
 /**
+ * Utility classes
+ */
+.a11y-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/**
+ * Slider.js
+ */
+.Slider-container {
+  width: 300%;
+  height: 300px;
+  -webkit-transition: transform .5s ease-in;
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  -o-transition: transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+.Slider-container--1 {
+  -webkit-transform: translateX(-33.33333333%);
+  -ms-transform: translateX(-33.33333333%);
+  transform: translateX(-33.33333333%);
+}
+
+.Slider-container--2 {
+  -webkit-transform: translateX(-66.66666666%);
+  -ms-transform: translateX(-66.66666666%);
+  transform: translateX(-66.66666666%);
+}
+
+.Slider-containerItem {
+  width: 33.33333333%;
+  height: 100%;
+}
+
+.Slider-img { position: absolute; max-height: 290px; }
+.Slider-img--lotr { bottom: 0; left: 0; }
+.Slider-img--spiderman { top: 0; left: 0; }
+.Slider-img--starwars { bottom: 0; right: 0; }
+.Slider-quote { position: absolute; font-size: 1rem; line-height: 1.75; color: #2c3e50; }
+.Slider-quote q { display: block; font-weight: bold; }
+.Slider-quote cite::before { content: '\00ff0d'; margin-right: 4px;}
+.Slider-quote--lotr footer { text-align: right; }
+
+/* iPhone 5,5C,5S,SE portrait */
+@media only screen and (max-width: 567px) {
+  .Slider-img { opacity: .1; }
+  .Slider-quote--spiderman,
+  .Slider-quote--starwars {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+/* iPhone 5,5C,5S,SE landscape */
+@media only screen and (min-width: 568px) {
+  .Slider-quote--spiderman,
+  .Slider-quote--starwars {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 250px;
+  }
+  .Slider-quote--spiderman { right: 0; }
+  .Slider-quote--starwars { left: 1em; }
+}
+/* iPhone 6,7,8,SE2 portrait */
+@media only screen and (min-width: 667px) {
+  .Slider-quote--spiderman,
+  .Slider-quote--starwars { max-width: 350px; }
+  .Slider-quote--starwars { left: 0; }
+}
+
+.Slider-controls {
+  margin-top: -1px;
+  border-top: 2px solid #2c3e50;
+}
+
+.Slider-controlsBullets-item {
+  margin: 0 4px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #2c3e50;
+  border-radius: 50%;
+  background: none;
+}
+
+.Slider-controlsBullets-item--selected {
+  background-color: #2c3e50;
+}
+
+/**
  * Contact Page
  */
 .Contact-label {
