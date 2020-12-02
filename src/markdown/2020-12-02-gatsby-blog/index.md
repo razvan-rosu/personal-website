@@ -9,6 +9,8 @@ tags: 'frontend'
 Ever thought of giving a static website generator a try? So have I!
 
 During this pandemic period, it crossed my mind to shape my digital presence with a blog.
+Through this blog, I can complement my career path outlined on my LinkedIn profile, with my professional activities outside of work.
+
 To spice things up a bit, I've went out of my comfort zone and jumped into GatsbyJS with TailwindCSS (I haven't worked with ReactJS, nor GraphQL before).
 On top of that, I've set up a Netlify CI pipeline for deploys and hooked Yandex Metrika for monitoring.
 
