@@ -11,6 +11,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import Footer from "./footer";
+import CookieConsent from "../components/cookieconsent";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -33,6 +34,7 @@ const Layout = ({ children }) => (
             </div>
           </main>
           <Footer></Footer>
+          <CookieConsent/>
         </div>
       </>
     )}
