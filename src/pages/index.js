@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => (
       ))}
     </ul>
     <div className="flex justify-end text-concrete">
-      <a href="#top" className="focus:outline-none focus:shadow-outline">
+      <a href="#top" className="focus:outline-none focus:shadow-outline hover:underline">
         <span className="align-middle">Go to top</span>
         <FiArrowUp className="inline align-middle" />
       </a>

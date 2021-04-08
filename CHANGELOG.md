@@ -1,4 +1,7 @@
-# Realeases:
+# Releases:
+
+### 0.10.0 feat
+- add `Cookie Consent` notification
 
 ### 0.9.0 chore
 - add Gatsy-blog blogpost
