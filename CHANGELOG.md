@@ -1,10 +1,13 @@
 # Releases:
 
+### 0.11.0 chore
+- add `Arcademia` blogpost
+
 ### 0.10.0 feat
 - add `Cookie Consent` notification
 
 ### 0.9.0 chore
-- add Gatsy-blog blogpost
+- add `Gatsy blog` blogpost
 
 ### 0.8.0 feat
 - add About Me carousel
