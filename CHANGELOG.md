@@ -1,5 +1,8 @@
 # Releases:
 
+### 0.11.1 fix
+- replace `Allura` font with `Birthstone Bounce` for using romanian diacritics
+
 ### 0.11.0 chore
 - add `Arcademia` blogpost
 
