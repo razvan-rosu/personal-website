@@ -18,7 +18,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
-        handwritten: ['Allura', "cursive"],
+        handwritten: ['Birthstone Bounce', "cursive"],
       },
     },
   },
