@@ -11,7 +11,7 @@ const ContactFormPage = () => (
   <Layout>
     <SEO title="Page Contact" />
     <section className="Contact">
-      <h1 className="text-4xl text-center text-midnight">Contact</h1>
+      <h1 className="mb-2 text-4xl text-center font-handwritten text-midnight">Contact</h1>
 
       <form className="text-2xl font-handwritten text-midnight"
             name="contact"
@@ -72,8 +72,8 @@ const ContactFormPage = () => (
 
         <button type="submit" className="w-full sm:w-auto mt-8 bg-transparent hover:bg-greensea text-greensea font-sans hover:text-white px-4 border border-text-greensea rounded
                                         focus:outline-none focus:shadow-outline"
-          ><IoIosPaperPlane className="inline align-text-bottom mr-2"
-          /><span className="text-lg align-text-bottom mr-2">Send</span
+          ><IoIosPaperPlane className="inline align-text-middle mr-2"
+          /><span className="text-lg font-handwritten align-text-middle mr-2">Send</span
         ></button>
       </form>
       <img className="Contact-coffee hidden md:block" src={CoffeeCup} alt="Cup of Coffee"/>
