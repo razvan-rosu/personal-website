@@ -24,7 +24,7 @@ const Slider = () => {
                   <q>With great templates, comes great responsitivity!</q>
                 </p>
                 <footer className="mb-2 mt-4">
-                  <cite>if <u>Ben Parker</u> was a Front-End engineer</cite>
+                  <cite>if <u>Ben Parker</u> was a Frontend engineer</cite>
                 </footer>
               </blockquote>
             </article>
@@ -42,7 +42,7 @@ const Slider = () => {
                   I’m willing to share my knowledge with any interesting hobbit or elf I meet on my way.
                 </p>
                 <footer className="mb-2 mt-4">
-                  <cite>if <u>Gandalf</u> was a Front-End wizard</cite>
+                  <cite>if <u>Gandalf</u> was a Frontend wizard</cite>
                 </footer>
               </blockquote>
             </article>
