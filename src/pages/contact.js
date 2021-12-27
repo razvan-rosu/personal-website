@@ -34,12 +34,13 @@ const ContactFormPage = () => (
                  required />
         </span>,&nbsp;
         <br/>
-        I'm a <span className="Contact-inputWrap">
+        I'm a <span className="Contact-dropdownWrap">
           <select name="role"
                   id="role"
                   className="Contact-dropdown focus:outline-none focus:shadow-outline"
+                  defaultValue={"default"}
                   required>
-            <option value="default" selected disabled hidden>Visionary</option>
+            <option value="default" disabled>Visionary</option>
             <option value="ux">UX Designer</option>
             <option value="ui">UI Designer</option>
             <option value="pm">Project Manager</option>
@@ -60,7 +61,7 @@ const ContactFormPage = () => (
         </div>
 
         You can reach me at the following <label htmlFor="email" className="Contact-label">e-mail address:</label>
-        <span className="Contact-inputWrap">
+        <span className="Contact-emailWrap">
           <input type="email"
                  name="email"
                  id="email"

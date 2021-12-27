@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1 className="text-4xl font-extrabold text-midnight">About me</h1>
-    <p className="text-2xl font-bold text-midnight">Front-End engineer by day, geek by night!</p>
+    <p className="text-2xl font-bold text-midnight">Frontend engineer by day, geek by night!</p>
     <Slider />
     <h2 className="text-4xl font-extrabold text-midnight">Articles</h2>
     <p className="text-2xl font-bold text-midnight">Here's what I've been up to:</p>

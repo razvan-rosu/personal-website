@@ -211,13 +211,29 @@ nav, .container, footer { position: relative; z-index: 10; }
   display: none;
 }
 
-.Contact-inputWrap {
+.Contact-inputWrap,
+.Contact-emailWrap,
+.Contact-dropdownWrap {
   display: inline-block;
   vertical-align: middle;
   position: relative;
 }
 
-.Contact-inputWrap::after {
+.Contact-inputWrap {
+  min-width: 220px;
+}
+
+.Contact-dropdownWrap {
+  min-width: 180px;
+}
+
+.Contact-emailWrap {
+  min-width: 200px;
+}
+
+.Contact-inputWrap::after,
+.Contact-emailWrap::after,
+.Contact-dropdownWrap::after {
   content: '';
   display: block;
   position: absolute;
@@ -230,7 +246,11 @@ nav, .container, footer { position: relative; z-index: 10; }
 
 .Contact-textareaWrap {
   position: relative;
-  max-width: 540px;
+}
+@media only screen and (min-width: 568px) {
+  .Contact-textareaWrap {
+    max-width: 540px;
+  }
 }
 
 .Contact-textareaWrap::before,

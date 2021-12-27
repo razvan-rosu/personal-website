@@ -1,5 +1,8 @@
 # Releases:
 
+### 0.11.2 fix
+- remove `ym` analytics
+
 ### 0.11.1 fix
 - replace `Allura` font with `Birthstone Bounce` for using romanian diacritics
 
