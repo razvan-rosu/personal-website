@@ -1,5 +1,11 @@
 # Releases:
 
+### 0.12.0
+- remove cookie consent component
+- fix back link hover effect
+- fix theme colors
+- add `Developing Design Systems: first steps` meetup and medium article blogposts
+
 ### 0.11.2 fix
 - remove `ym` analytics
 
