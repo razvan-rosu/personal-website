@@ -3,7 +3,7 @@ path: '/web-optimizations-back-to-the-basics-frontend-bucharest-meetup'
 title: 'Web Optimizations: back to the basics @FrontendBucharest Meetup'
 date: '2016-10-25T00:00:00.169Z'
 featuredImage: './featured-image.jpg'
-tags: 'frontend, meetup'
+tags: 'meetup'
 ---
 
 I've held a lightning talk at Frontend Bucharest Meetup, based on a personal case study on decreasing webpages load speed.
