@@ -41,8 +41,8 @@ module.exports = {
         name: `RR`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#FF2400`,
-        theme_color: `#FF2400`,
+        background_color: `#C0392B`,
+        theme_color: `#C0392B`,
         display: `minimal-ui`,
         icon: `src/images/rr.png`, // This path is relative to the root of the site.
       },
