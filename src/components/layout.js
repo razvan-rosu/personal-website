@@ -11,7 +11,6 @@ import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
 import Footer from "./footer";
-import CookieConsent from "../components/cookieconsent";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,17 +23,14 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <div className="flex flex-col min-h-screen justify-between bg-clouds">
           <Header siteTitle={data.site.siteMetadata.title} />
           <main className="mb-auto py-6 px-4">
-            <div className="container mx-auto">
-              {children}
-            </div>
+            <div className="container mx-auto">{children}</div>
           </main>
           <Footer></Footer>
-          <CookieConsent/>
         </div>
       </>
     )}
@@ -42,7 +38,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;
