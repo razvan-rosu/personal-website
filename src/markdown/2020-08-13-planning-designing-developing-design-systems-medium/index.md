@@ -3,7 +3,7 @@ path: '/planning-designing-developing-design-systems-medium-article'
 title: 'Planning, designing and developing Design Systems - Medium article'
 date: '2020-08-13T00:00:00.169Z'
 featuredImage: './featured-image.jpg'
-tags: 'frontend, ux, research'
+tags: 'research, frontend, ux'
 ---
 
 The topic of Design Systems always had my curiosity. 

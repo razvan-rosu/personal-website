@@ -3,7 +3,7 @@ path: '/atomic-design-frontend-bucharest-meetup'
 title: 'Atomic Design @FrontendBucharest Meetup'
 date: '2016-01-22T00:00:00.169Z'
 featuredImage: './featured-image.jpg'
-tags: 'frontend, meetup'
+tags: 'meetup'
 ---
 
 I've held my first lightning talk at Frontend Bucharest Meetup on Brad Frost's Atomic Design methodology.
